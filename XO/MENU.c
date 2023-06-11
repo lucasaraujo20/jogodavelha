@@ -80,11 +80,12 @@ int main() {
                                 compara1 = 0;
                                 break;
                             }else{
+                                j++;
                                 compara1 = 1;
+                                break;
                             }
                         }
                     }while(compara1 == 0);
-                    j++;
                 }else if(opcao2 == 2){
                     do{
                         printf("\n");
@@ -100,6 +101,8 @@ int main() {
                         for(i = 0;i < j; i++){
                             if(strcmp(usuario[j].nome,usuario[i].nome) == 0 && strcmp(usuario[j].senha,usuario[i].senha) == 0){
                                 //funcionamento do jogo
+                                j++;
+                                break;
                                 exit(1);
                             }else{
                                 printf(ANSI_COLOR_RED);
