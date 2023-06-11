@@ -109,7 +109,6 @@ int main() {
                             }
                         }
                     }while(compara2 != 0 && compara2 != 0);
-                    j++;
                 }else if(opcao2==3){
                     opcao = 0;
                     opcao2 = 1;
