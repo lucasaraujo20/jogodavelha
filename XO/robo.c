@@ -101,26 +101,7 @@ int main(){
                     }
                 
 
-            
-
-
-                    //bot começa 
-
-            /*if( quadrado[1][2] != ' '){
-                  
-                  quadrado[0][0] = 'O';
-
-                  if ( quadrado[0][1] != ' '){
-                    quadrado[2][0] = 'O';
-
-
-                    if( quadrado[1][1] != ' ')
-                    quadrado[1][0] = 'O';
-
-                }else if (quadrado[1][0] != ' '){
-                    quadrado[1][1] = 'O';
-                }
-            } */
+           
 
 
             // Condção de vitoria 1. horizontal
@@ -134,7 +115,7 @@ int main(){
             if( quadrado[0][2] == 'O' && quadrado[1][2] == 'O' && quadrado[2][2] == 'O'){ cont = 7; printf("\tRobo Venceu!!\n");};
             if( quadrado[0][1] == 'O' && quadrado[1][1] == 'O' && quadrado[2][1] == 'O'){ cont = 7; printf("\tRobo Venceu!!\n");};
 
-            // Condição de vitoria 3, Diagonal direita
+            // Condição de vitoria 3, Diagonal direita e esquerda
 
            if( quadrado[0][0] == 'O' && quadrado[1][1] == 'O' && quadrado[2][2] == 'O'){ cont = 7; printf("\tRobo Venceu!!\n");};
            if( quadrado[0][2] == 'O' && quadrado[1][1] == 'O' && quadrado[2][0] == 'O'){ cont = 7; printf("\tRobo Venceu!!\n");};        
