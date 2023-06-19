@@ -30,7 +30,7 @@ int main() {
 
 
         if (quadrado[l - 1][q - 1] != ' ' ) {
-        printf("Posição ocupada. Tente novamente.\n");
+        printf("Ocupado. Tente novamente\n");
         continue;
 
         }
