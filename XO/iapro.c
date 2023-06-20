@@ -115,7 +115,7 @@ int condicaovitoria(char pl) { // pl = player
         }
     }
 
-
+    //Diagonais
     if (quadrado[0][0] == pl && quadrado[1][1] == pl && quadrado[2][2] == pl && pl != ' ') {
         return 1; 
     }
@@ -212,7 +212,8 @@ int Ramo() {
             quadrado[i][1] = 'O';
             return 1;
         }
-    }
+    }// O | | O
+
 
 
     for (int i = 0; i < 3; i++) {
