@@ -561,12 +561,12 @@ void saveRanking(Player players[], int numPlayers){
 
 void loadRanking(Player players[], int *numPlayers){
     FILE *file = fopen(RANKING_FILE, "r");
+    char line[100];
     if (file == NULL) {
         *numPlayers = 0;
         return;
     }
     *numPlayers = 0;
-    char line[100];
     while(fgets(line, sizeof(line), file) != NULL){
         char *name = strtok(line, ",");
         int wins = atoi(strtok(NULL, ","));
